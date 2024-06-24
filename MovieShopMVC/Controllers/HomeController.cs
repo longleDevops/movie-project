@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using ApplicationCore.Contracts.Services;
+
 using MovieShopMVC.Models;
 
 namespace MovieShopMVC.Controllers;
@@ -7,15 +9,17 @@ namespace MovieShopMVC.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IMovieService _movieService;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IMovieService movieService)
     {
         _logger = logger;
+        _movieService = movieService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        return View(); 
     }
 
     public IActionResult Privacy()
