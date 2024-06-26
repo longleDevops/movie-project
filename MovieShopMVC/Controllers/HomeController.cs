@@ -19,7 +19,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View(); 
+        var movies = _movieService.GetTop30GrossingMovies();
+        return View(movies); 
     }
 
     public IActionResult Privacy()

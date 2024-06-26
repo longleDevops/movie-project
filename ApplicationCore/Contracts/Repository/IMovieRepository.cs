@@ -1,11 +1,12 @@
 ﻿using System;
+using ApplicationCore.Entities;
+
 namespace ApplicationCore.Contracts.Repository
 {
-	public class IMovieRepository
+	// Implement all methods for movie
+	public interface IMovieRepository: IRepository<Movie>
 	{
-		public IMovieRepository()
-		{
-		}
+        IEnumerable<Movie> GetTop30RevenueMovies();
 	}
 }
 

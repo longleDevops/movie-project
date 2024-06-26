@@ -1,12 +1,21 @@
 ﻿using System;
-
+using ApplicationCore.Contracts.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MovieShopMVC.Controllers
 {
-	public class MoviesController
+	public class MoviesController:Controller
 	{
-		public MoviesController()
+		private readonly IMovieService _movieService;
+
+		public MoviesController(IMovieService movieService)
 		{
+			_movieService = movieService;
+		}
+
+		public IActionResult Details(int id)
+		{
+			return View();
 		}
 	}
 }
