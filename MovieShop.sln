@@ -3,16 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{805376AA-1E39-4227-AA89-DD1C6BBC5EBE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{8AC0206B-4E70-4ED9-8194-21AE2E4B5A2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShopMVC", "MovieShopMVC\MovieShopMVC.csproj", "{F7DB2960-E9B3-4EB4-BBAB-AA26B5F4F92E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{289FAE2E-609C-49FD-8F95-AAC321CFD7E1}"
 	ProjectSection(SolutionItems) = preProject
 		note.txt = note.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{3BDC29B7-96BE-4A46-A848-DF6B369C1287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShopMVC", "MovieShopMVC\MovieShopMVC.csproj", "{5260B4CD-2291-4EDA-9904-9FFEC0038A5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{71E51498-D479-4C70-82B2-C0C272E27F02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,18 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{805376AA-1E39-4227-AA89-DD1C6BBC5EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{805376AA-1E39-4227-AA89-DD1C6BBC5EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{805376AA-1E39-4227-AA89-DD1C6BBC5EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{805376AA-1E39-4227-AA89-DD1C6BBC5EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8AC0206B-4E70-4ED9-8194-21AE2E4B5A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8AC0206B-4E70-4ED9-8194-21AE2E4B5A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8AC0206B-4E70-4ED9-8194-21AE2E4B5A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8AC0206B-4E70-4ED9-8194-21AE2E4B5A2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7DB2960-E9B3-4EB4-BBAB-AA26B5F4F92E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7DB2960-E9B3-4EB4-BBAB-AA26B5F4F92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7DB2960-E9B3-4EB4-BBAB-AA26B5F4F92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7DB2960-E9B3-4EB4-BBAB-AA26B5F4F92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDC29B7-96BE-4A46-A848-DF6B369C1287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDC29B7-96BE-4A46-A848-DF6B369C1287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDC29B7-96BE-4A46-A848-DF6B369C1287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDC29B7-96BE-4A46-A848-DF6B369C1287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5260B4CD-2291-4EDA-9904-9FFEC0038A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5260B4CD-2291-4EDA-9904-9FFEC0038A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5260B4CD-2291-4EDA-9904-9FFEC0038A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5260B4CD-2291-4EDA-9904-9FFEC0038A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E51498-D479-4C70-82B2-C0C272E27F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E51498-D479-4C70-82B2-C0C272E27F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E51498-D479-4C70-82B2-C0C272E27F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E51498-D479-4C70-82B2-C0C272E27F02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
