@@ -22,19 +22,7 @@ namespace Infrastructure.Repositories
             return movies;
         }
 
-        public override Movie GetByID(int id)
-        {
-            // First will throw exeption if id does not exist
-            // FirstOrDefault safest, will be default value if id not exist
-            // Single throws ex 0 or more than 1
-            // SingleOrDefault throws ex if more than 1, if equal 0, will be the default value
-
-            // include junction table first => include the actual table from genre => 
-            var movieDetails = _dbContext.Movies.Include(m => m.GenresOfMovie).ThenInclude(m => m.Genre).Include(m=>m.Trailers).FirstOrDefault(m=>m.Id==id);
-
-            return movieDetails;
-
-        }
+        
 
 
     }

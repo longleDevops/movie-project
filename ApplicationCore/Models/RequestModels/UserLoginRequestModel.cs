@@ -4,6 +4,7 @@ namespace ApplicationCore.Models.RequestModels;
 
 public class UserLoginRequestModel
 {
+    public UserLoginRequestModel() {}
     public UserLoginRequestModel(string email, string password)
     {
         Email = email;

@@ -4,6 +4,8 @@ namespace ApplicationCore.Models.RequestModels
 {
     public class UserRegisterRequestModel
     {
+        public UserRegisterRequestModel() { }
+
         public UserRegisterRequestModel(string email, string password, string firstName, string lastName,
             DateTime dateOfBirth)
         {

@@ -24,15 +24,19 @@ namespace MovieShopMVC.Controllers
             _userService = userService;
 		}
 
-        [HttpGet]
-        public ActionResult Login()
+        public IActionResult Login()
         {
             return View();
         }
 
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
         [HttpPost]
-        public async Task<ActionResult> Login(UserLoginRequestModel loginRequest, string? returnUrl = null)
+        public async Task<IActionResult> Login(UserLoginRequestModel loginRequest, string? returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
             if (!ModelState.IsValid) return View();
@@ -61,6 +65,14 @@ namespace MovieShopMVC.Controllers
                 new ClaimsPrincipal(claimsIdentity));
 
             return LocalRedirect(returnUrl);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(UserRegisterRequestModel registerModel)
+        {
+            if (!ModelState.IsValid) return View();
+            await _accountService.CreateUser(registerModel);
+            return RedirectToAction("Login");
         }
     }
 }

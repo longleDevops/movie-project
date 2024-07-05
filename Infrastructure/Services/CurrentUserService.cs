@@ -2,15 +2,21 @@
 using System.Security.Claims;
 using ApplicationCore.Contracts.Services;
 
+
 namespace Infrastructure.Services
 {
 	public class CurrentUserService: ICurrentUserService
 	{
-		public CurrentUserService()
-		{
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public CurrentUserService(IHttpContextAccessor httpContextAccessor)
+        { 
+
+            _httpContextAccessor = httpContextAccessor;
+
 		}
 
-        public int UserId => throw new NotImplementedException();
+    public int UserId => throw new NotImplementedException();
 
         public bool IsAuthenticated => throw new NotImplementedException();
 
@@ -33,6 +39,13 @@ namespace Infrastructure.Services
         public IEnumerable<Claim> GetClaimsIdentity()
         {
             throw new NotImplementedException();
+        }
+
+        private bool GetAuthenticated()
+        {
+            return _httpContextAccessor.HttpContext?.User.Identity != null &&
+                   _httpContextAccessor.HttpContext != null &&
+                   _httpContextAccessor.HttpContext.User.Identity.IsAuthenticated;
         }
     }
 }

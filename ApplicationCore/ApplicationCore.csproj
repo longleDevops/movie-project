@@ -26,4 +26,7 @@
     <Folder Include="Models\RequestModels\" />
     <Folder Include="Models\ResponseModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
 </Project>

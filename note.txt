@@ -1,3 +1,12 @@
 ﻿
 dotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csproj
 dotnet ef database update
+
+Services will return model, repository will return the entity or primitive types such as bool, int
+Application core: IAsyncRepository (base interface) that will provide
+ inheritance, any other interface inherited from this base interface does not need to implement all the predefined methods
+
+User repository inherits from the Efrepository:
+1/ does not need to implement all methods as the base repository already implemented those
+2/ can use all methods within the EfRepository with additional methods
+
